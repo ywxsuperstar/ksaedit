@@ -75,7 +75,7 @@ We use [Stable Diffusion XL base 1.0](https://huggingface.co/stabilityai/stable-
 **Training data.**
 We provide three sets of training prompts in CSV format:
 
-- *Universal SAE Training Data* [creat_data/prompt_attr_52.csv](creat_data/prompt_attr_52.csv). ~52,000 samples. Each row includes `prompt`, `evaluation_seed`, and `class` (for attributes), covering **52 face-attribute** (e.g. old, smile, makeup) with contrastive prompt templates. These contrastive prompts are used to train the universal Attribute Sparse Autoencoder for attribute disentanglement.
+- *Universal SAE Training Data:* [creat_data/prompt_attr_52.csv](creat_data/prompt_attr_52.csv). ~52,000 samples. Each row includes `prompt`, `evaluation_seed`, and `class` (for attributes), covering **52 face-attribute** (e.g. old, smile, makeup) with contrastive prompt templates. These contrastive prompts are used to train the universal Attribute Sparse Autoencoder for attribute disentanglement.
 - *Multi-Subject Fine-tuning Data:* [creat_data/step2_ft_data.csv](creat_data/step2_ft_data.csv). ~10,600 `(neg_prompt, pos_prompt)` pairs. Used for the joint fine-tuning of the pretrained K-SAE and the newly introduced Attention Pooling Aggregator (AAg) module. It provides supervision with `target_token` to accurately localize attributes to specific subjects (e.g., *man*, *woman*) in complex multi-subject scenes. 
 - *Style Generalization Data:* [creat_data/style.csv](creat_data/style.csv). ~4,000 prompt pairs across diverse photographic and artistic styles (e.g. black-and-white, golden-hour, fisheye) for training style sliders.
 
