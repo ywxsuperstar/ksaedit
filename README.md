@@ -1,4 +1,4 @@
-# All-in-One Slider for Attribute Manipulation in Diffusion Models
+# [CVPR 2026] All-in-One Slider for Attribute Manipulation in Diffusion Models
 
 <p align="center">
   <strong>Weixin Ye</strong><sup>1,2*</sup> &nbsp;&nbsp;
@@ -139,16 +139,18 @@ We further explore fine-tuning the pretrained k-SAE jointly with an Attention Po
 
 We use [Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) as the evaluator to assess attribute manipulation quality, including semantic alignment, identity preservation, and visual coherence. The evaluation pipeline follows [ImgEdit](https://github.com/PKU-YuanGroup/ImgEdit?tab=readme-ov-file). For **identity consistency**, we adopt the pipeline from [InsightFace_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch).
 
-## 📝 How to cite
+## 📝 Citation
 
-The preprint can be cited as follows:
+If this codebase is useful to you, please consider citing:
 
 ```bibtex
-@article{ye2026allinoneslider,
-      title={All-in-One Slider for Attribute Manipulation in Diffusion Models}, 
-      author={Weixin Ye and Hongguang Zhu and Wei Wang and Yahui Liu and Mengyu Wang and Xuecheng Nie},
-      journal={arXiv preprint arXiv:2508.19195},
-      year={2026}
+@InProceedings{ye2026allinoneslider,
+    author    = {Ye, Weixin and Zhu, Hongguang and Wang, Wei and Liu, Yahui and Wang, Mengyu and Nie, Xuecheng},
+    title     = {All-in-One Slider for Attribute Manipulation in Diffusion Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {18693-18702}
 }
 ```
 
