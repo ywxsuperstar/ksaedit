@@ -1,4 +1,4 @@
-# All-in-One Slider for Attribute Manipulation in Diffusion Models
+# [CVPR 2026] All-in-One Slider for Attribute Manipulation in Diffusion Models
 
 <p align="center">
   <strong>Weixin Ye</strong><sup>1,2*</sup> &nbsp;&nbsp;
